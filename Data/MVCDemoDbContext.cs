@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ASPNETMVCCRUD.Models.Domain;
+using Microsoft.EntityFrameworkCore;
 
 namespace ASPNETMVCCRUD.Data
 {
@@ -8,6 +9,6 @@ namespace ASPNETMVCCRUD.Data
         {
         }
 
-        public DbSet<> MyProperty { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 }

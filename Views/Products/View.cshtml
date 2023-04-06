@@ -1,0 +1,30 @@
+﻿@model ASPNETMVCCRUD.Models.UpdateProductViewModel
+
+@{}
+   <h1>
+       Update Products
+    </h1>
+<form method="post" action="View" class="mt-5">
+    <div class="mb-3">
+    <label for="">ProductID</label>
+    <input type="text" class="form-control" asp-for="ProductId" readonly>
+    
+  </div>
+  <div class="mb-3">
+    <label for="">ProductName</label>
+    <input type="text" class="form-control" asp-for="ProductName">
+    
+  </div>
+  <div class="mb-3">
+    <label for="">ProductPrice</label>
+    <input type="text" class="form-control" asp-for="ProductPrice">
+    
+  </div>
+  <div class="mb-3">
+    <label for="">ProductAvailability</label>
+    <input type="text" class="form-control" asp-for="ProductAvailability">
+    
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-danger" asp-action="Delete" asp-controller="Products">Delete</button>
+  </form>
